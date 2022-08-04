@@ -5,8 +5,9 @@ int main()
 {
    float N1    ,  N2;
    char operateur;
-
-
+printf("cliquer sur q si vous voulez quitez calculatrice");
+do {
+   
    printf("saisir le premier nombre");
     scanf("%f",&N1);
 
@@ -29,10 +30,10 @@ int main()
             break;
 
     case '/':
-            printf("operation du division %f ",N1 / N2);
-            if (N2 !=0){
-                printf("la divistion est  %f" , N1 / N2);  }
-            else if (N2<=0) {
+          if (N2 !=0)  {
+                printf("la divistion est  %f" , N1 / N2); 
+  }
+            else  {
                     printf("operation impossible");}
 
             break;
@@ -45,7 +46,7 @@ int main()
 }
 
 
-
+} while( operateur='q' );
 
 
 
